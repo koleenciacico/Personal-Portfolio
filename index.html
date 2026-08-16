@@ -3,49 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keicee's Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <title>Keicee | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-   <header>
-         <a href="" target="_blank"><img class ="logo" src="assets/logo-btn/keicee-logo.gif" alt="keicee logo"></a>
-            <nav>
-                <a href="" target="_blank"><img class="nav-img" src="assets/nav-btn/home-btn.png" alt="HOME"></a>
-                <a href="" target="_blank"><img class="nav-img" src="assets/nav-btn/skills-btn.png" alt="SKILLS"></a>
-                <a href="" target="_blank"><img class="nav-img" src="assets/nav-btn/project-btn.png" alt="PROJECTS"></a>
-                <a href="" target="_blank"><img class="nav-img" src="assets/nav-btn/contact-btn.png" alt="CONTACT"></a>
-                <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
-            </nav>
-            
-   </header>
-   <main>
-        <section class="hero">
-            <div class="intro-header-left">
-                <h1>Hello There!</h1>
-                <h1>I'm Koleen Ciacico</h1>
-                <p id="status">Currently: Freelancing + figuring life out ☕</p>
-                    <div class="about-me">
-                        <h2>About Me</h2>
-                            <p id="story-1">I’m an aspiring developer who enjoys turning ideas into small, interactive experiences.</p>
-                            <p id="story-2">I like building things that feel cozy, simple, and a little bit playful. </p>
-                            <p id="story-3">Currently exploring full-stack development, while also improving 
-                            how I communicate and think through problems.</p>
-                            <p id="story-3">Outside coding, I like reading, organizing my thoughts,and trying not to overthink everything. </p>
+<body class="light-mode">
+
+    <header>
+        <a class="logo-link" href="#"><img class="logo" src="assets/logo-btn/keicee-logo.gif" alt="Keicee logo"></a>
+
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="site-nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="about">
+            <div class="hero-ticket">
+                <div class="hero-ticket-left">
+                    <div class="hero-photo">
+                        <img src="assets/pfp/keicee-profile.png" alt="Keicee" onerror="this.src='https://placehold.co/220x220/8b5cf6/ffffff?text=K'">
                     </div>
+                    <p class="hero-handle">@koleenciacico</p>
+                </div>
+                <div class="hero-ticket-divider"></div>
+                <div class="hero-ticket-right">
+                    <p class="hero-tag">✦ Aspiring Developer &amp; Creative</p>
+                    <h1 class="hero-heading">Hello, I'm <span class="accent-name">Koleen</span><br>but call me <span class="accent-name">Keicee</span> ✦</h1>
+                    <p id="status">Currently: Freelancing + figuring life out ☕</p>
+                    <div class="hero-badges">
+                        <span class="hero-badge">📍 Rizal, Philippines</span>
+                        <span class="hero-badge">@kln_keicee</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>I'm an aspiring developer who enjoys turning ideas into small, interactive experiences.</p>
+                <p>I like building things that feel cozy, simple, and a little bit playful.</p>
+                <p>Currently exploring full-stack development, while also improving how I communicate and think through problems.</p>
+                <p>Outside coding, I like reading, organizing my thoughts, and trying not to overthink everything.</p>
             </div>
             <div class="intro-link">
-                    <i class="fa-solid link-arrow fa-arrow-right"></i>
-                    <a href="https://www.linkedin.com/in/koleen-ciacico-77b7022b9/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/koleenciacico" target="_blank">GitHub</a>
-                    <a href="https://www.fiverr.com/s/ljPY5La" target="_blank">Fiverr</a>
-              </div>   
+                <a href="https://www.linkedin.com/in/koleen-ciacico-77b7022b9/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/koleenciacico" target="_blank">GitHub</a>
+                <a href="https://www.fiverr.com/s/ljPY5La" target="_blank">Fiverr</a>
+            </div>
         </section>
-        <section>
+
+        <!-- SKILLS -->
+        <section id="skills">
             <h2>Skills</h2>
             <div class="table-stack">
-             <table >
+                <div class="table-scroll">
+                <table>
                     <thead>
                         <tr>
                             <th>Area</th>
@@ -54,113 +79,193 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Frontend</td>
-                            <td>ReactJS | React Native | Tailwind CSS</td>
+                            <td>Languages</td>
+                            <td>JavaScript · TypeScript · Java · Node.js</td>
                         </tr>
                         <tr>
-                            <td>Backend</td>
-                            <td>Node.js | Express | SQL | MongoDB | AppWrite</td>
+                            <td>Frameworks</td>
+                            <td>React Native · Basic jQuery</td>
+                        </tr>
+                        <tr>
+                            <td>Testing</td>
+                            <td>Manual Testing · Unit Testing (Jest)</td>
+                        </tr>
+                        <tr>
+                            <td>Methodologies</td>
+                            <td>Agile · SDLC · STLC · OOP</td>
                         </tr>
                         <tr>
                             <td>Design</td>
-                            <td>Figma | Canva | Adobe Illustrator | Photoshop</td>
+                            <td>Figma · Canva · Adobe Illustrator · Photoshop</td>
                         </tr>
                         <tr>
-                            <td>Version Control</td>
-                            <td>Git | GitHub</td>
+                            <td>Dev Tools</td>
+                            <td>Git · GitHub · Android Studio · Unity</td>
                         </tr>
                     </tbody>
                 </table>
+                </div>
             </div>
         </section>
-        <section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
             <h2>Tech Projects</h2>
+
+            <div class="project-filter" role="tablist" aria-label="Filter projects by category">
+                <button class="filter-btn active" data-filter="dev" type="button">💻 Dev Projects</button>
+                <button class="filter-btn" data-filter="manual" type="button">🧪 Manual Testing</button>
+                <button class="filter-btn" data-filter="automation" type="button">🤖 Automation</button>
+            </div>
+
             <div class="project-grid-row">
-                <div class="project-card">
+
+                <!-- ARventure -->
+                <div class="project-card" data-category="dev">
                     <div>
-                        <h4>Thesis</h4>
-                        <p>June 2024</p>
+                        <h4>Thesis Project</h4>
+                        <p>December 2024</p>
                         <h3>ARventure</h3>
                         <div class="tech-list">
-                            <div class="card-secondary-btn">
-                                <p>Techstack1</p>
+                            <div class="tech-tags">
+                                <span class="card-secondary-btn">Android Studio</span>
+                                <span class="card-secondary-btn">Java</span>
+                                <span class="card-secondary-btn">HTML</span>
+                                <span class="card-secondary-btn">CSS</span>
+                                <span class="card-secondary-btn">JavaScript</span>
                             </div>
-                             <div class="card-secondary-btn">
-                                <p>Techstack2</p>
-                            </div>
-                             <div class="card-secondary-btn">
-                                <p>Techstack3</p>
-                            </div>
-                             <p class="prj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                                ut aliquip ex ea commodo consequat.
-                            </p>
+                            <p class="prj-desc">An AR-powered storybook mobile app for children aged 3–5, featuring interactive 3D storytelling and text-to-speech functionality. Served as designer and frontend developer. Also built a companion website to showcase the app.</p>
                             <div class="project-links">
-                                <a target="_blank" href="">Live</a>
-                                <a target="_blank" href="">GitHub</a>
+                                <a target="_blank" href="#">Live</a>
+                                <a target="_blank" href="#">GitHub</a>
                             </div>
                         </div>
-            
                     </div>
                     <div class="project-img">
-                        <img class="big-img" src="/web-portfolio/assets/project-thumbnail/arventure.png" alt="ARventure-thumnail" > 
+                        <img class="big-img" src="assets/project-thumbnail/arventure.png" alt="ARventure thumbnail">
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- Commuting For Dummies -->
+                <div class="project-card" data-category="dev">
                     <div>
-                        <h4>Games</h4>
-                        <p>June 2024</p>
-                        <h3>ARventure</h3>
+                        <h4>UI/UX Group Project</h4>
+                        <p>November 2024</p>
+                        <h3>Commuting For Dummies</h3>
                         <div class="tech-list">
-                            <div class="card-secondary-btn">
-                                <p>Techstack1</p>
+                            <div class="tech-tags">
+                                <span class="card-secondary-btn">Figma</span>
+                                <span class="card-secondary-btn">UX Research</span>
                             </div>
-                             <div class="card-secondary-btn">
-                                <p>Techstack2</p>
-                            </div>
-                             <div class="card-secondary-btn">
-                                <p>Techstack3</p>
-                            </div>
-                            <p class="prj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                                ut aliquip ex ea commodo consequat.
-                            </p>
+                            <p class="prj-desc">Led design and user research for a commuter-focused mobile app with real-time navigation and fare estimation. Conducted research with Rizal-based commuters to identify pain points and improve the public transport experience.</p>
                             <div class="project-links">
-                                <a target="_blank" href="">Live</a>
-                                <a target="_blank" href="">GitHub</a>
+                                 <a target="_blank" href="https://www.figma.com/proto/SK4kdQPnj3wFrFdSpYRcfn/Commuting-for-Dummies?node-id=10-44&t=q7071yTpd1DOPFKi-1&scaling=scale-down&content-scaling=responsive&page-id=0%3A1&starting-point-node-id=1%3A4">Figma</a>
+                                <a target="_blank" href="#">GitHub</a>
                             </div>
                         </div>
-                        
                     </div>
                     <div class="project-img">
-                        <img class="big-img" src="/web-portfolio/assets/project-thumbnail/arventure.png" alt="ARventure-thumnail" >
+                        <img class="big-img" src="assets/project-thumbnail/commuting.png" alt="Commuting For Dummies thumbnail">
                     </div>
                 </div>
+
+                <!-- Osci-Duo -->
+                <div class="project-card" data-category="dev">
+                    <div>
+                        <h4>Game Development · Group Project</h4>
+                        <p>June 2024</p>
+                        <h3>Osci-Duo</h3>
+                        <div class="tech-list">
+                            <div class="tech-tags">
+                                <span class="card-secondary-btn">Unity</span>
+                                <span class="card-secondary-btn">C#</span>
+                                <span class="card-secondary-btn">2D Pixel Art</span>
+                            </div>
+                            <p class="prj-desc">Served as lead game designer and programmer for a 2D pixelated cooperative game built in Unity. Drove most of the development including cooperative gameplay mechanics and level design.</p>
+                            <div class="project-links">
+                                <a target="_blank" href="#">Live</a>
+                                <a target="_blank" href="#">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img class="big-img" src="assets/project-thumbnail/osciduo.png" alt="Osci-Duo thumbnail">
+                    </div>
+                </div>
+
+                <!-- Manual Testing placeholder -->
+                <p class="project-empty" data-empty-for="manual" hidden>Manual testing projects coming soon ✨</p>
+
+                <!-- Automation placeholder -->
+                <p class="project-empty" data-empty-for="automation" hidden>Automation projects coming soon ✨</p>
+
             </div>
         </section>
+
+        <!-- COLOR GAME -->
         <section>
+            <h2>Try Something Fun ✦</h2>
+            <div class="game-section">
+                <h3>Color My World</h3>
+                <p>Click the button and pick a color to repaint this whole page. Don't blame me for the results. 🎨</p>
                 <div id="play-game">
                     <button onclick="playGame()">Try Me!</button>
                 </div>
-                <div style="display:none;"  class="color-div">
-                    <h4>Choose a color</h4>
-                    <p style="display:none;">Great you ruin the design hahahah!</p>
-                    <input type="color" id="color-picker" onchange ="changeColor()" value="#0084f"/>    
+                <div class="color-div">
+                    <h4>Choose a color 🎨</h4>
+                    <p>Great, you ruined the design hahahah!</p>
+                    <input type="color" id="color-picker" onchange="changeColor()" value="#c48a5a">
                     <button style="display:none;" onclick="resetColor()">Reset!</button>
                 </div>
+            </div>
         </section>
-   </main>
-   <footer>
-            <section>
-                <div>
-                    
-                </div>
-            </section>
-            <p>created by: Koleen Ciacico</p>
-            <p>nicknamed: Keicee</p>
-   </footer>
 
-   <script src="web-script.js"></script>
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section">
+            <h2>Let's Connect</h2>
+            <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                Whether it's a project, a collab, or just a hello — I'd love to hear from you. 💌
+            </p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/koleen-ciacico-77b7022b9/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/koleenciacico" target="_blank">GitHub</a>
+                <a href="https://www.fiverr.com/s/ljPY5La" target="_blank">Fiverr</a>
+                <a href="mailto:koleenciacico021@gmail.com?subject=Portfolio%20Inquiry">Email Me</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>created by: Koleen Ciacico</p>
+        <p>nicknamed: Keicee ✦</p>
+        <p style="margin-top: 0.5rem;">© 2024 — built with ☕ and a lot of console.log()</p>
+    </footer>
+
+    <!-- SPOTIFY MINI PLAYER
+         Swap the iframe src below for your own track/playlist/artist embed link:
+         open the item on open.spotify.com → Share → Embed → copy the src URL. -->
+    <div class="spotify-widget" id="spotify-widget">
+        <button class="spotify-toggle" id="spotify-toggle" aria-label="Open music player" title="Now playing">🎧</button>
+        <div class="spotify-player" id="spotify-player">
+            <div class="spotify-player-header">
+                <span>🎶 currently vibing to</span>
+                <button class="spotify-close" id="spotify-close" aria-label="Close music player">✕</button>
+            </div>
+            <iframe
+                title="Spotify player"
+                src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <script src="web-script.js"></script>
+
 </body>
 </html>
